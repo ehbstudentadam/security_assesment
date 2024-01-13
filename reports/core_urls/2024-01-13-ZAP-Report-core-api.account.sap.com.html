@@ -1,0 +1,2510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP Scanning Report</title>
+<link
+	href="2024-01-13-ZAP-Report-core-api.account.sap.com/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2024-01-13-ZAP-Report-core-api.account.sap.com/themes/original/main.css" rel="stylesheet">
+<link
+	href="2024-01-13-ZAP-Report-core-api.account.sap.com/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2024-01-13-ZAP-Report-core-api.account.sap.com/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Sat 13 Jan 2024, at 14:48:29</span>
+		</p>
+		<p>ZAP Version: 2.14.0</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-3-confidence-2"><span>Risk</span>=<span
+									class="risk-level">High</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(4)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(2)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(4)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(1)</span></a></li>
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(3)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(4)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">https://core-api.account.sap.com</span></li>
+						<li><span class="site">https://a8462f3ftrial.authentication.us10.hana.ondemand.com</span></li>
+						<li><span class="site">https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5.3%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(5.3%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(21.1%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(10.5%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>6</span><br> <span class="additional-info-percentages">(31.6%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(21.1%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5.3%)</span></td>
+							<td><span>5</span><br> <span class="additional-info-percentages">(26.3%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(15.8%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(21.1%)</span></td>
+							<td><span>7</span><br> <span class="additional-info-percentages">(36.8%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(21.1%)</span></td>
+							<td><span>10</span><br> <span
+								class="additional-info-percentages">(52.6%)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(26.3%)</span></td>
+							<td><span>19</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="3">Site</th>
+							<th scope="row">https://core-api.account.sap.com</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							
+						</tr>
+						<tr>
+							
+							<th scope="row">https://a8462f3ftrial.authentication.us10.hana.ondemand.com</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(3)</span></td>
+							
+						</tr>
+						<tr>
+							
+							<th scope="row">https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(3)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(4)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Open Redirect</a></th>
+							<td class="risk-level">High</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">CSP: Wildcard Directive</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(26.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">CSP: script-src unsafe-inline</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(10.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">CSP: style-src unsafe-inline</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(21.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(26.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Cross-Domain Misconfiguration</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>39</span><br> <span
+								class="additional-info-percentages">(205.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">Cookie No HttpOnly Flag</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>18</span><br> <span
+								class="additional-info-percentages">(94.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">Cookie with SameSite Attribute None</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>73</span><br> <span
+								class="additional-info-percentages">(384.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">Cross-Domain JavaScript Source File Inclusion</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(31.6%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-10">Timestamp Disclosure - Unix</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-11">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(21.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-12">Authentication Request Identified</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-13">Information Disclosure - Sensitive Information in URL</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-14">Information Disclosure - Suspicious Comments</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(21.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-15">Modern Web Application</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>12</span><br> <span
+								class="additional-info-percentages">(63.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-16">Re-examine Cache-control Directives</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(31.6%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-17">Session Management Response Identified</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>86</span><br> <span
+								class="additional-info-percentages">(452.6%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-18">User Controllable HTML Element Attribute (Potential XSS)</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>10</span><br> <span
+								class="additional-info-percentages">(52.6%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>19</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-3-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">High</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						
+						
+						
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(4)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://a8462f3ftrial.authentication.us10.hana.ondemand.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://a8462f3ftrial.authentication.us10.hana.ondemand.com/login</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (689 bytes)</summary>
+				
+				<pre><code>GET https://a8462f3ftrial.authentication.us10.hana.ondemand.com/login HTTP/1.1
+host: a8462f3ftrial.authentication.us10.hana.ondemand.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Referer: https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com/
+Connection: keep-alive
+Cookie: X-Uaa-Csrf=XrCrBv4sVJJGjUVhtQrls4; JSESSIONID=1B8770F233AC9A24D2EDC765B24322A6; __VCAP_ID__=b5accf49-dee2-4b57-5839-c1c1
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-site
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (597 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+content-language: en-US
+content-type: text/html;charset=UTF-8
+date: Thu, 11 Jan 2024 14:43:15 GMT
+expires: 0
+pragma: no-cache
+set-cookie: X-Uaa-Csrf=SdyfvjIJVCbCeqdsVTy8G4; Max-Age=86400; Expires=Fri, 12 Jan 2024 14:43:16 GMT; Path=/; Secure; HttpOnly; SameSite=None
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-vcap-request-id: 286e1eba-587d-4468-789a-ad66e49d7e8a
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains; preload;
+content-length: 3084
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3084 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html dir=&quot;ltr&quot; lang=&quot;en&quot; &gt;
+&lt;head&gt;
+    
+    &lt;title&gt;Login&lt;/title&gt;
+    &lt;meta charset=&#39;utf-8&#39; /&gt;
+    &lt;meta name=&#39;author&#39; content=&quot;SAP SE&quot; /&gt;
+    &lt;meta name=&#39;copyright&#39; content=&quot;Copyright © 2024 SAP SE. All rights reserved.&quot; /&gt;
+    &lt;meta name=&#39;robots&#39; content=&#39;all&#39; /&gt;
+    &lt;meta name=&#39;Description&#39; content=&quot;&quot;/&gt;
+    &lt;meta name=&#39;keywords&#39; content=&quot;&quot;/&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;/&gt;
+    
+    &lt;meta name=&quot;redirect&quot; content=&quot;https://accounts.sap.com/oauth2/authorize?client_id=8c960bdf-f522-45b6-80e1-b6e0c3fc4785&amp;amp;response_type=code&amp;amp;redirect_uri=https%3A%2F%2Fa8462f3ftrial.authentication.us10.hana.ondemand.com%2Flogin%2Fcallback%2Fsap.default&amp;amp;state=7WoMiG208T&amp;amp;scope=email+openid+profile&amp;amp;nonce=GY74lBS87bbe&quot;&gt;
+        
+&lt;script&gt;function samlRedirect(){var link=null;var metaElements=document.getElementsByTagName(&#39;meta&#39;);for(k=0;k&lt;metaElements.length;k++){if(metaElements[k].getAttribute(&#39;name&#39;)===&#39;redirect&#39;){link=metaElements[k].getAttribute(&#39;content&#39;);};};if(link!=null&amp;&amp;link.length&gt;0&amp;&amp;getQueryStringValue(&quot;origin&quot;)!==&quot;uaa&quot;)location.href=link;}function getQueryStringValue(key){return decodeURIComponent(window.location.search.replace(new RegExp(&quot;^(?:.*[&amp;\\?]&quot;+encodeURIComponent(key).replace(/[\.\+\*]/g,&quot;\\$&amp;&quot;)+&quot;(?:\\=([^&amp;]*))?)?.*$&quot;,&quot;i&quot;),&quot;$1&quot;));}samlRedirect();&lt;/script&gt;
+    
+    &lt;link href=&quot;/resources/oss/stylesheets/application.css&quot; rel=&quot;stylesheet&quot;/&gt;
+    &lt;link href=&quot;/resources/oss/stylesheets/sap.css&quot; rel=&quot;stylesheet&quot;/&gt;
+    &lt;style&gt;.header-image {null}&lt;/style&gt;
+    
+&lt;/head&gt;
+&lt;body class=&quot;sapUiBody&quot;   style=&quot;height: 100%; overflow: hidden;&quot; &gt;
+ &lt;header class=&quot;sapUiSraBrandingBar sapThemeBrand-asBackgroundColor&quot;&gt;&lt;/header&gt;
+&lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;header&quot;&gt;
+        &lt;div&gt;&lt;/div&gt;
+        &lt;div class=&quot;header-image&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;island&quot;&gt;
+    &lt;h2 style=&quot;color:#666666 !important;&quot;&gt;Welcome to trial!&lt;/h2&gt;
+    &lt;div class=&quot;island-content&quot;&gt;
+        
+
+        
+
+        
+       
+        &lt;div&gt;
+          &lt;div class=&quot;saml-login&quot;&gt;
+            &lt;p&gt;or sign in with: &lt;/p&gt;
+            
+            &lt;div &gt;
+                &lt;div&gt;
+                    &lt;a href=&quot;https://accounts.sap.com/oauth2/authorize?client_id=8c960bdf-f522-45b6-80e1-b6e0c3fc4785&amp;amp;response_type=code&amp;amp;redirect_uri=https%3A%2F%2Fa8462f3ftrial.authentication.us10.hana.ondemand.com%2Flogin%2Fcallback%2Fsap.default&amp;amp;state=7WoMiG208T&amp;amp;scope=email+openid+profile&amp;amp;nonce=GY74lBS87bbe&quot; class=&quot;saml-login-link&quot;&gt;Default Identity Provider&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+    &lt;/div&gt;
+&lt;/div&gt;
+    &lt;div class=&quot;footer-spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sapUiSraFooter&quot;&gt;
+    &lt;div class=&quot;sapUiSraLoginLogo&quot;&gt;
+        &lt;img width=&quot;64&quot; src=&quot;/resources/oss/images/sap.png&quot;/&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;sapUiSraLoginCopyright&quot;
+         title=&quot;Version: 74.1.0, Commit: d4c3fd3, Timestamp: 2019-09-05T21:25:00+0000, UAA: https://authentication.us10.hana.ondemand.com&quot;&gt;
+         Copyright © 2024 SAP SE. All rights reserved.
+         
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+    
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com</span> <span>(3)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">CSP: Wildcard Directive</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com/site?siteId=137c66b4-7048-421f-b0fc-2645bd06c0d0</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: </p>
+
+<p>style-src, img-src, connect-src, frame-src, frame-ancestors, font-src, media-src, object-src, manifest-src, form-action</p>
+
+<p>The directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (548 bytes)</summary>
+				
+				<pre><code>GET https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com/site?siteId=137c66b4-7048-421f-b0fc-2645bd06c0d0 HTTP/1.1
+host: a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (449 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+cache-control: no-cache, no-store, must-revalidate
+content-security-policy: script-src &#39;self&#39; &#39;unsafe-inline&#39;; frame-ancestors *
+content-type: text/html
+date: Thu, 11 Jan 2024 14:43:15 GMT
+x-content-type-options: nosniff
+x-request-id: c05122ce-66a0-4484-6c36-c49f8b3e584d
+x-vcap-request-id: c05122ce-66a0-4484-6c36-c49f8b3e584d
+strict-transport-security: max-age=31536000; includeSubDomains; preload;
+content-length: 802
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (802 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;&lt;head&gt;&lt;link rel=&quot;shortcut icon&quot; href=&quot;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&quot; /&gt;&lt;script&gt;document.cookie=&quot;fragmentAfterLogin=&quot;+encodeURIComponent(location.hash)+&quot;;path=/;Secure;SameSite=None;&quot;;document.cookie=&quot;locationAfterLogin=&quot;+encodeURIComponent(location.href.split(&#39;#&#39;)[0].split(location.host)[1])+&quot;;path=/;Secure;SameSite=None;&quot;;document.cookie=&quot;signature=94F0B%2Fn81XLdixtZK0LAj0xSa5k%3D;path=/;Secure;SameSite=None;&quot;;location=&quot;https://a8462f3ftrial.authentication.us10.hana.ondemand.com/oauth/authorize?response_type=code&amp;client_id=sb-launchpad-dt-approuter!t1483&amp;redirect_uri=https%3A%2F%2Fa8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com%2Flogin%2Fcallback%3FauthType%3Dxsuaa&amp;state=e04b3194-d52b-4ed6-8468-91efbae1f3dd&quot;&lt;/script&gt;&lt;/head&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>content-security-policy</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>script-src &#39;self&#39; &#39;unsafe-inline&#39;; frame-ancestors *</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">CSP: script-src unsafe-inline</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com/site?siteId=137c66b4-7048-421f-b0fc-2645bd06c0d0</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>script-src includes unsafe-inline.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (548 bytes)</summary>
+				
+				<pre><code>GET https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com/site?siteId=137c66b4-7048-421f-b0fc-2645bd06c0d0 HTTP/1.1
+host: a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (449 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+cache-control: no-cache, no-store, must-revalidate
+content-security-policy: script-src &#39;self&#39; &#39;unsafe-inline&#39;; frame-ancestors *
+content-type: text/html
+date: Thu, 11 Jan 2024 14:43:15 GMT
+x-content-type-options: nosniff
+x-request-id: c05122ce-66a0-4484-6c36-c49f8b3e584d
+x-vcap-request-id: c05122ce-66a0-4484-6c36-c49f8b3e584d
+strict-transport-security: max-age=31536000; includeSubDomains; preload;
+content-length: 802
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (802 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;&lt;head&gt;&lt;link rel=&quot;shortcut icon&quot; href=&quot;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&quot; /&gt;&lt;script&gt;document.cookie=&quot;fragmentAfterLogin=&quot;+encodeURIComponent(location.hash)+&quot;;path=/;Secure;SameSite=None;&quot;;document.cookie=&quot;locationAfterLogin=&quot;+encodeURIComponent(location.href.split(&#39;#&#39;)[0].split(location.host)[1])+&quot;;path=/;Secure;SameSite=None;&quot;;document.cookie=&quot;signature=94F0B%2Fn81XLdixtZK0LAj0xSa5k%3D;path=/;Secure;SameSite=None;&quot;;location=&quot;https://a8462f3ftrial.authentication.us10.hana.ondemand.com/oauth/authorize?response_type=code&amp;client_id=sb-launchpad-dt-approuter!t1483&amp;redirect_uri=https%3A%2F%2Fa8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com%2Flogin%2Fcallback%3FauthType%3Dxsuaa&amp;state=e04b3194-d52b-4ed6-8468-91efbae1f3dd&quot;&lt;/script&gt;&lt;/head&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>content-security-policy</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>script-src &#39;self&#39; &#39;unsafe-inline&#39;; frame-ancestors *</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">CSP: style-src unsafe-inline</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com/site?siteId=137c66b4-7048-421f-b0fc-2645bd06c0d0</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>style-src includes unsafe-inline.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (548 bytes)</summary>
+				
+				<pre><code>GET https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com/site?siteId=137c66b4-7048-421f-b0fc-2645bd06c0d0 HTTP/1.1
+host: a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (449 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+cache-control: no-cache, no-store, must-revalidate
+content-security-policy: script-src &#39;self&#39; &#39;unsafe-inline&#39;; frame-ancestors *
+content-type: text/html
+date: Thu, 11 Jan 2024 14:43:15 GMT
+x-content-type-options: nosniff
+x-request-id: c05122ce-66a0-4484-6c36-c49f8b3e584d
+x-vcap-request-id: c05122ce-66a0-4484-6c36-c49f8b3e584d
+strict-transport-security: max-age=31536000; includeSubDomains; preload;
+content-length: 802
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (802 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;&lt;head&gt;&lt;link rel=&quot;shortcut icon&quot; href=&quot;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&quot; /&gt;&lt;script&gt;document.cookie=&quot;fragmentAfterLogin=&quot;+encodeURIComponent(location.hash)+&quot;;path=/;Secure;SameSite=None;&quot;;document.cookie=&quot;locationAfterLogin=&quot;+encodeURIComponent(location.href.split(&#39;#&#39;)[0].split(location.host)[1])+&quot;;path=/;Secure;SameSite=None;&quot;;document.cookie=&quot;signature=94F0B%2Fn81XLdixtZK0LAj0xSa5k%3D;path=/;Secure;SameSite=None;&quot;;location=&quot;https://a8462f3ftrial.authentication.us10.hana.ondemand.com/oauth/authorize?response_type=code&amp;client_id=sb-launchpad-dt-approuter!t1483&amp;redirect_uri=https%3A%2F%2Fa8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com%2Flogin%2Fcallback%3FauthType%3Dxsuaa&amp;state=e04b3194-d52b-4ed6-8468-91efbae1f3dd&quot;&lt;/script&gt;&lt;/head&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>content-security-policy</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>script-src &#39;self&#39; &#39;unsafe-inline&#39;; frame-ancestors *</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://core-api.account.sap.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Cross-Domain Misconfiguration</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://core-api.account.sap.com/uid-core/client/config</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (428 bytes)</summary>
+				
+				<pre><code>GET https://core-api.account.sap.com/uid-core/client/config HTTP/1.1
+host: core-api.account.sap.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: application/json, text/plain, */*
+Accept-Language: en-US,en;q=0.5
+Referer: https://account.sap.com/
+Origin: https://account.sap.com
+Connection: keep-alive
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (589 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200
+Date: Thu, 11 Jan 2024 15:32:54 GMT
+Content-Type: application/json
+Connection: keep-alive
+X-Request-Id: b7282cb7fec86d06de982f06c82e3d56
+Content-Security-Policy: default-src: self; frame-ancestors none;
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Methods: *
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: DENY
+content-length: 443
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (443 bytes)</summary>
+				
+				<pre><code>{&quot;gigyaApiKey&quot;:&quot;3_8nyT5U5bgmcYd76h25LbEmWhqOWeM39-36YxT90-TFTHoCC5AWQbqzABxbwJMaxU&quot;,&quot;cdcMaxJwtTtlSec&quot;:180,&quot;applicationInsights&quot;:{&quot;key&quot;:&quot;f808457a-3684-482b-94d7-05d81cc5e91f&quot;,&quot;clientSide&quot;:{&quot;enabled&quot;:false}},&quot;siteKey&quot;:&quot;MTPublic-F4pGivKj3&quot;,&quot;captchaActive&quot;:true,&quot;readOnlyMode&quot;:{&quot;active&quot;:false,&quot;message&quot;:&quot;Currently in maintenance mode. Please try again in a few minutes.&quot;},&quot;emailsLimit&quot;:10,&quot;samUrl&quot;:&quot;https://account.sap.com&quot;,&quot;useIDSRedirect&quot;:false}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Access-Control-Allow-Origin: *</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance).</p>
+
+<p>Configure the &quot;Access-Control-Allow-Origin&quot; HTTP header to a more restrictive set of domains, or remove all CORS headers entirely, to allow the web browser to enforce the Same Origin Policy (SOP) in a more restrictive manner.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						
+						
+						
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(4)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://a8462f3ftrial.authentication.us10.hana.ondemand.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">Cookie with SameSite Attribute None</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://a8462f3ftrial.authentication.us10.hana.ondemand.com/oauth/authorize?response_type=code&amp;client_id=sb-launchpad-dt-approuter!t1483&amp;redirect_uri=https%3A%2F%2Fa8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com%2Flogin%2Fcallback%3FauthType%3Dxsuaa&amp;state=e04b3194-d52b-4ed6-8468-91efbae1f3dd</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set with its SameSite attribute set to &quot;none&quot;, which means that the cookie can be sent as a result of a &#39;cross-site&#39; request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (792 bytes)</summary>
+				
+				<pre><code>GET https://a8462f3ftrial.authentication.us10.hana.ondemand.com/oauth/authorize?response_type=code&amp;client_id=sb-launchpad-dt-approuter!t1483&amp;redirect_uri=https%3A%2F%2Fa8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com%2Flogin%2Fcallback%3FauthType%3Dxsuaa&amp;state=e04b3194-d52b-4ed6-8468-91efbae1f3dd HTTP/1.1
+host: a8462f3ftrial.authentication.us10.hana.ondemand.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Referer: https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com/
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-site
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (803 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+content-length: 0
+date: Thu, 11 Jan 2024 14:43:15 GMT
+expires: 0
+location: https://a8462f3ftrial.authentication.us10.hana.ondemand.com/login
+pragma: no-cache
+set-cookie: X-Uaa-Csrf=XrCrBv4sVJJGjUVhtQrls4; Max-Age=86400; Expires=Fri, 12 Jan 2024 14:43:16 GMT; Path=/; Secure; HttpOnly; SameSite=None
+set-cookie: JSESSIONID=1B8770F233AC9A24D2EDC765B24322A6; Path=/; Secure; HttpOnly; SameSite=None
+set-cookie: __VCAP_ID__=b5accf49-dee2-4b57-5839-c1c1; Path=/; HttpOnly; Secure; SameSite=None
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-vcap-request-id: 4e641fb2-3232-4f79-4c1f-52dd49dfdc05
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains; preload;
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Uaa-Csrf</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>set-cookie: X-Uaa-Csrf</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the SameSite attribute is set to either &#39;lax&#39; or ideally &#39;strict&#39; for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">Cross-Domain JavaScript Source File Inclusion</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com/site?siteId=137c66b4-7048-421f-b0fc-2645bd06c0d0</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/">OWASP_2021_A08</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The page includes one or more script files from a third-party domain.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (751 bytes)</summary>
+				
+				<pre><code>GET https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com/site?siteId=137c66b4-7048-421f-b0fc-2645bd06c0d0 HTTP/1.1
+host: a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Referer: https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com/
+Connection: keep-alive
+Cookie: JSESSIONID=s%3AggYcO35KA7R4zoWfNFE9SW6IZRtK-ceT.0j%2BPfJ11cNyq9HAVN2Domyehmc5BlYcY3FPGWs0sduU; __VCAP_ID__=da3cc993-8426-4599-7cf4-642c
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-site
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (1678 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+cache-control: no-cache, no-store, must-revalidate
+content-length: 26767
+content-security-policy: frame-ancestors &#39;self&#39; https://teams.microsoft.com https://a8462f3ftrial.cpp.cfapps.us10.hana.ondemand.com https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com https://a8462f3ftrial.workzone.cfapps.us10.hana.ondemand.com https://a8462f3ftrial.workzonehr.cfapps.us10.hana.ondemand.com https://a8462f3ftrial.mobile.workzone.cfapps.us10.hana.ondemand.com https://a8462f3ftrial.mobile.workzonehr.cfapps.us10.hana.ondemand.com https://a8462f3ftrial.cppng.cfapps.us10.hana.ondemand.com https://a8462f3ftrial.launchpadng.cfapps.us10.hana.ondemand.com https://a8462f3ftrial.workzoneng.cfapps.us10.hana.ondemand.com https://a8462f3ftrial.workzonehrng.cfapps.us10.hana.ondemand.com https://a8462f3ftrial.us10.start.cloud.sap https://a8462f3ftrial.mobile.workzoneng.cfapps.us10.hana.ondemand.com https://a8462f3ftrial.mobile.workzonehrng.cfapps.us10.hana.ondemand.com; default-src * data: blob:; script-src *  data: blob:; connect-src * data: blob:; img-src * data: blob: ; frame-src * data: blob: mailto: tel: sms: ms-word: ms-excel: ms-powerpoint:; style-src * &#39;unsafe-inline&#39; data: blob:;font-src * data: blob: ; worker-src * data: blob:
+content-type: text/html; charset=utf-8
+date: Thu, 11 Jan 2024 15:34:19 GMT
+etag: W/&quot;688f-E/SDu/Dj/gg74fyh/fp7ObdwwP4&quot;
+vary: Accept-Encoding
+x-content-type-options: nosniff
+x-request-id: f3859202-4cad-4b62-61d2-7ea29ad44fef
+x-sf-correlation-id: f3859202-4cad-4b62-61d2-7ea29ad44fef
+x-vcap-request-id: f3859202-4cad-4b62-61d2-7ea29ad44fef
+strict-transport-security: max-age=31536000; includeSubDomains; preload;
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (26767 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;html class=&quot;sapUShellFullHeight&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=UTF-8&quot;/&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;/&gt;
+    
+    &lt;link rel=&quot;icon&quot; href=&quot;data:;base64,iVBORw0KGgo=&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot;  href=&quot;&amp;#x2f;comsapuitheming.runtime&amp;#x2f;themeroot&amp;#x2f;v1&amp;#x2f;&amp;#x7e;v&amp;#x3d;Base&amp;#x3a;11.10.0,&amp;#x2a;.&amp;#x2a;.custom_horizon_security&amp;#x28;sap_horizon&amp;#x29;&amp;#x3a;20231114T151343Z&amp;#x2f;UI5&amp;#x2f;sap&amp;#x2f;ui&amp;#x2f;core&amp;#x2f;themes&amp;#x2f;custom_horizon_security&amp;#x2f;library.css&amp;#x3f;version&amp;#x3d;1.120.4&amp;amp;sap-ui-dist-version&amp;#x3d;1.120.4&quot; id=&quot;sap-ui-theme-sap.ui.core&quot; data-sap-ui-ready=&quot;true&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot;  href=&quot;&amp;#x2f;comsapuitheming.runtime&amp;#x2f;themeroot&amp;#x2f;v1&amp;#x2f;&amp;#x7e;v&amp;#x3d;Base&amp;#x3a;11.10.0,&amp;#x2a;.&amp;#x2a;.custom_horizon_security&amp;#x28;sap_horizon&amp;#x29;&amp;#x3a;20231114T151343Z&amp;#x2f;UI5&amp;#x2f;sap&amp;#x2f;m&amp;#x2f;themes&amp;#x2f;custom_horizon_security&amp;#x2f;library.css&amp;#x3f;version&amp;#x3d;1.120.4&amp;amp;sap-ui-dist-version&amp;#x3d;1.120.4&quot; id=&quot;sap-ui-theme-sap.m&quot; data-sap-ui-ready=&quot;true&quot;/&gt;
+    
+
+    &lt;meta name=&quot;sap.flp.cf.Config&quot; content=&#39;&amp;#x7b;&amp;quot;instanceId&amp;quot;&amp;#x3a;&amp;quot;13bc5897_aa9e_44cf_959d_8936bd8ccddf&amp;quot;,&amp;quot;featureFlags&amp;quot;&amp;#x3a;&amp;#x5b;&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_das_plugin_enabled&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_key_user_adaptation&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_off_bizx_enabled&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_force_purge_jam&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_alias_account_plugin&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_move_enabled&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_provider_token_db&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_system_info&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_qr_android&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;mobile_start_enabled&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_unsafe_inline&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;notifications_enabled&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_jam_k8s_enabled&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;workzone_notifications_enabled&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_html5_static_resources&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;false&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;fioritechp1-24873-myhome-enforce-standalone-resolution&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_enable_update_plan_broker&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;nav_enable_client_target_resolution_recording&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;false&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_show_applications_in_search_box&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;provider_id_migration&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_monitor_site_features_enabled&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;html5_providers&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;false&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_send_access_token_enabled&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_dev_env_plan_standard&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;false&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_dev_env_plan_foundation&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;false&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;viztypes_filtering_enabled&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;false&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_myhome_enabled&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_subaccount_content_activation&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;false&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_sap_start_redis_cache&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;false&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_ui5_asynchronous_module_loading&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;user_defaults_deployed&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_cmk_enabled&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;nav-service-enabled&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;fioritechp1-24927-myhome-enforce-taskcenter-central-template&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_cep_translations&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_cep_new_experience&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_wz_custom_domain_enabled&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_workzone_content_api&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;false&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_uitrace_metering_enabled&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_new_content_api_url&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;nav_full_sync_only_updated_providers&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;false&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_sap_start_in_standard_plan&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;ff_delete_jam_company_enabled&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;,&amp;#x7b;&amp;quot;name&amp;quot;&amp;#x3a;&amp;quot;enable_workflow_to_spa&amp;quot;,&amp;quot;value&amp;quot;&amp;#x3a;&amp;quot;true&amp;quot;&amp;#x7d;&amp;#x5d;,&amp;quot;siteId&amp;quot;&amp;#x3a;&amp;quot;137c66b4-7048-421f-b0fc-2645bd06c0d0&amp;quot;,&amp;quot;staticResourcesCacheToken&amp;quot;&amp;#x3a;&amp;quot;e8ce9d66cc4df4561f1c0c72444c95bc0ba47951&amp;quot;,&amp;quot;site&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;payload&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;ushellConfig&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;services&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;AllMyApps&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;enabled&amp;quot;&amp;#x3a;true&amp;#x7d;&amp;#x7d;&amp;#x7d;,&amp;quot;renderers&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;fiori2&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;componentData&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;enableHelp&amp;quot;&amp;#x3a;false,&amp;quot;rootIntent&amp;quot;&amp;#x3a;&amp;quot;Shell-home&amp;quot;,&amp;quot;applications&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;Shell-home&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;enableEasyAccess&amp;quot;&amp;#x3a;false,&amp;quot;enableHomePageSettings&amp;quot;&amp;#x3a;true&amp;#x7d;&amp;#x7d;,&amp;quot;enableSearch&amp;quot;&amp;#x3a;true,&amp;quot;sizeBehavior&amp;quot;&amp;#x3a;&amp;quot;Responsive&amp;quot;,&amp;quot;enableSetTheme&amp;quot;&amp;#x3a;true,&amp;quot;enableWebAssist&amp;quot;&amp;#x3a;false,&amp;quot;enableHideGroups&amp;quot;&amp;#x3a;true,&amp;quot;enableUserThemes&amp;quot;&amp;#x3a;true,&amp;quot;enableSetLanguage&amp;quot;&amp;#x3a;true,&amp;quot;enableTilesOpacity&amp;quot;&amp;#x3a;false,&amp;quot;enableRecentActivity&amp;quot;&amp;#x3a;false,&amp;quot;enablePersonalization&amp;quot;&amp;#x3a;true,&amp;quot;searchBusinessObjects&amp;quot;&amp;#x3a;false,&amp;quot;enableAutomaticSignout&amp;quot;&amp;#x3a;true,&amp;quot;enableActionModeMenuButton&amp;quot;&amp;#x3a;true,&amp;quot;enableUserDefaultParameters&amp;quot;&amp;#x3a;true,&amp;quot;enableFeaturePolicyInIframes&amp;quot;&amp;#x3a;true,&amp;quot;enableActionModeFloatingButton&amp;quot;&amp;#x3a;true,&amp;quot;moveAppFinderActionToShellHeader&amp;quot;&amp;#x3a;false,&amp;quot;moveEditHomePageActionToShellHeader&amp;quot;&amp;#x3a;false,&amp;quot;moveUserSettingsActionToShellHeader&amp;quot;&amp;#x3a;false&amp;#x7d;&amp;#x7d;&amp;#x7d;&amp;#x7d;,&amp;quot;modulePaths&amp;quot;&amp;#x3a;&amp;#x7b;&amp;#x7d;,&amp;quot;bootstrapPlugins&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;MobileStartQrCode&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;component&amp;quot;&amp;#x3a;&amp;quot;sap.cf.plugins.MobileStartQrCode&amp;quot;,&amp;quot;url&amp;quot;&amp;#x3a;&amp;quot;https&amp;#x3a;&amp;#x2f;&amp;#x2f;portal-service.cfapps.us10.hana.ondemand.com&amp;#x2f;resources&amp;#x2f;portal&amp;#x2f;&amp;#x7e;e8ce9d66cc4df4561f1c0c72444c95bc0ba47951&amp;#x7e;&amp;#x2f;sap&amp;#x2f;cf&amp;#x2f;plugins&amp;#x2f;MobileStartQrCode&amp;quot;&amp;#x7d;&amp;#x7d;&amp;#x7d;&amp;#x7d;,&amp;quot;groupsOrder&amp;quot;&amp;#x3a;&amp;#x5b;&amp;#x5d;,&amp;quot;sap.cloud.portal&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;icon&amp;quot;&amp;#x3a;&amp;quot;portalsitetemplates&amp;#x2f;flp&amp;#x2f;preview.png&amp;quot;,&amp;quot;menu&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;width&amp;quot;&amp;#x3a;&amp;quot;full&amp;quot;,&amp;quot;height&amp;quot;&amp;#x3a;&amp;quot;s&amp;quot;,&amp;quot;version&amp;quot;&amp;#x3a;&amp;quot;2.0&amp;quot;,&amp;quot;alignment&amp;quot;&amp;#x3a;&amp;quot;left&amp;quot;,&amp;quot;availableMobile&amp;quot;&amp;#x3a;true,&amp;quot;availableDesktop&amp;quot;&amp;#x3a;true&amp;#x7d;,&amp;quot;isAsync&amp;quot;&amp;#x3a;true,&amp;quot;theme.id&amp;quot;&amp;#x3a;&amp;quot;custom_horizon_security&amp;quot;,&amp;quot;theme.active&amp;quot;&amp;#x3a;&amp;#x5b;&amp;quot;sap_fiori_3&amp;quot;,&amp;quot;sap_fiori_3_dark&amp;quot;,&amp;quot;sap_belize_hcb&amp;quot;,&amp;quot;sap_belize_hcw&amp;quot;,&amp;quot;sap_horizon&amp;quot;,&amp;quot;sap_horizon_dark&amp;quot;,&amp;quot;sap_horizon_hcb&amp;quot;,&amp;quot;sap_horizon_hcw&amp;quot;,&amp;quot;custom_horizon_security&amp;quot;&amp;#x5d;,&amp;quot;showSessionTimeoutDialog&amp;quot;&amp;#x3a;true,&amp;quot;ui5VersionNumber&amp;quot;&amp;#x3a;&amp;quot;1.120.4&amp;quot;&amp;#x7d;,&amp;quot;locales&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;available&amp;quot;&amp;#x3a;&amp;#x5b;&amp;quot;en&amp;quot;,&amp;quot;&amp;quot;&amp;#x5d;&amp;#x7d;,&amp;quot;_version&amp;quot;&amp;#x3a;&amp;quot;1.2.0&amp;quot;,&amp;quot;availablePageTemplates&amp;quot;&amp;#x3a;&amp;#x5b;&amp;#x5d;,&amp;quot;lastActivationTimestamp&amp;quot;&amp;#x3a;&amp;quot;1699974863187&amp;quot;&amp;#x7d;&amp;#x7d;,&amp;quot;_version&amp;quot;&amp;#x3a;&amp;quot;3.0.1&amp;quot;,&amp;quot;identification&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;id&amp;quot;&amp;#x3a;&amp;quot;137c66b4-7048-421f-b0fc-2645bd06c0d0&amp;quot;,&amp;quot;title&amp;quot;&amp;#x3a;&amp;quot;Security&amp;#x20;App&amp;quot;,&amp;quot;entityType&amp;quot;&amp;#x3a;&amp;quot;site&amp;quot;&amp;#x7d;,&amp;quot;personalizationConfiguration&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;lastModified&amp;quot;&amp;#x3a;1704813784536,&amp;quot;userDataConfiguration&amp;quot;&amp;#x3a;&amp;#x7b;&amp;#x7d;&amp;#x7d;,&amp;quot;localeConfiguration&amp;quot;&amp;#x3a;&amp;quot;en&amp;quot;,&amp;quot;tenantConfiguration&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;customDomainMap&amp;quot;&amp;#x3a;&amp;#x5b;&amp;#x5d;&amp;#x7d;&amp;#x7d;,&amp;quot;isKrakendRequest&amp;quot;&amp;#x3a;false,&amp;quot;isAdminScenario&amp;quot;&amp;#x3a;true,&amp;quot;TENANT_HOST_PATTERN&amp;quot;&amp;#x3a;&amp;quot;&amp;#x28;&amp;#x5e;&amp;#x28;.&amp;#x2a;&amp;#x29;&amp;#x28;&amp;#x3f;&amp;#x3d;-sapdelim-&amp;#x28;&amp;#x5b;&amp;#x5e;&amp;#x5c;&amp;#x5c;.&amp;#x5d;&amp;#x2a;&amp;#x29;&amp;#x28;&amp;#x5c;&amp;#x5c;.m&amp;#x29;&amp;#x3f;&amp;#x5c;&amp;#x5c;.launchpad&amp;#x5c;&amp;#x5c;.cfapps&amp;#x5c;&amp;#x5c;.us10&amp;#x5c;&amp;#x5c;.hana&amp;#x5c;&amp;#x5c;.ondemand&amp;#x5c;&amp;#x5c;.com&amp;#x29;&amp;#x7c;&amp;#x5e;&amp;#x28;&amp;#x5b;&amp;#x5e;&amp;#x5c;&amp;#x5c;.&amp;#x5d;&amp;#x2a;&amp;#x29;&amp;#x28;&amp;#x3f;&amp;#x3d;&amp;#x28;&amp;#x5c;&amp;#x5c;.m&amp;#x29;&amp;#x3f;&amp;#x5c;&amp;#x5c;.launchpad&amp;#x5c;&amp;#x5c;.cfapps&amp;#x5c;&amp;#x5c;.us10&amp;#x5c;&amp;#x5c;.hana&amp;#x5c;&amp;#x5c;.ondemand&amp;#x5c;&amp;#x5c;.com&amp;#x29;&amp;#x7c;&amp;#x5e;&amp;#x28;.&amp;#x2a;&amp;#x29;&amp;#x28;&amp;#x3f;&amp;#x3d;-sapdelim-&amp;#x28;&amp;#x5b;&amp;#x5e;&amp;#x5c;&amp;#x5c;.&amp;#x5d;&amp;#x2a;&amp;#x29;&amp;#x28;&amp;#x5c;&amp;#x5c;.m&amp;#x29;&amp;#x3f;&amp;#x5c;&amp;#x5c;.us10&amp;#x5c;&amp;#x5c;.start&amp;#x5c;&amp;#x5c;.cloud&amp;#x5c;&amp;#x5c;.sap&amp;#x29;&amp;#x7c;&amp;#x5e;&amp;#x28;&amp;#x5b;&amp;#x5e;&amp;#x5c;&amp;#x5c;.&amp;#x5d;&amp;#x2a;&amp;#x29;&amp;#x28;&amp;#x3f;&amp;#x3d;&amp;#x28;&amp;#x5c;&amp;#x5c;.m&amp;#x29;&amp;#x3f;&amp;#x5c;&amp;#x5c;.us10&amp;#x5c;&amp;#x5c;.start&amp;#x5c;&amp;#x5c;.cloud&amp;#x5c;&amp;#x5c;.sap&amp;#x29;&amp;#x29;&amp;quot;,&amp;quot;accountData&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;useTencent&amp;quot;&amp;#x3a;false,&amp;quot;subDomain&amp;quot;&amp;#x3a;&amp;quot;a8462f3ftrial&amp;quot;&amp;#x7d;,&amp;quot;scenario&amp;quot;&amp;#x3a;&amp;quot;LAUNCHPAD&amp;quot;,&amp;quot;customDomainData&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;internalHost&amp;quot;&amp;#x3a;&amp;quot;a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com&amp;quot;&amp;#x7d;&amp;#x7d;&#39;/&gt;
+    &lt;meta name=&quot;sap.ushellConfig.siteConfig&quot; content=&#39;&amp;#x7b;&amp;quot;defaultRenderer&amp;quot;&amp;#x3a;&amp;quot;fiori2&amp;quot;,&amp;quot;flpPlatform&amp;quot;&amp;#x3a;&amp;quot;cFLP&amp;quot;,&amp;quot;renderers&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;fiori2&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;componentData&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;enableRecentActivity&amp;quot;&amp;#x3a;false,&amp;quot;enableSearch&amp;quot;&amp;#x3a;true,&amp;quot;enableUserDefaultParameters&amp;quot;&amp;#x3a;true,&amp;quot;rootIntent&amp;quot;&amp;#x3a;&amp;quot;Shell-home&amp;quot;,&amp;quot;enableTilesOpacity&amp;quot;&amp;#x3a;false,&amp;quot;enablePersonalization&amp;quot;&amp;#x3a;true,&amp;quot;enableUserThemes&amp;quot;&amp;#x3a;true,&amp;quot;enableSetTheme&amp;quot;&amp;#x3a;true,&amp;quot;enableSetLanguage&amp;quot;&amp;#x3a;true,&amp;quot;enableHideGroups&amp;quot;&amp;#x3a;true,&amp;quot;enableActionModeMenuButton&amp;quot;&amp;#x3a;true,&amp;quot;enableActionModeFloatingButton&amp;quot;&amp;#x3a;true,&amp;quot;enableAutomaticSignout&amp;quot;&amp;#x3a;true,&amp;quot;sessionTimeoutIntervalInMinutes&amp;quot;&amp;#x3a;19,&amp;quot;sessionTimeoutReminderInMinutes&amp;quot;&amp;#x3a;3,&amp;quot;applications&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;Shell-home&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;enableTilesOpacity&amp;quot;&amp;#x3a;false,&amp;quot;enableActionModeMenuButton&amp;quot;&amp;#x3a;true,&amp;quot;enableActionModeFloatingButton&amp;quot;&amp;#x3a;true,&amp;quot;enableHideGroups&amp;quot;&amp;#x3a;true,&amp;quot;enableEasyAccess&amp;quot;&amp;#x3a;false,&amp;quot;enableHomePageSettings&amp;quot;&amp;#x3a;true&amp;#x7d;&amp;#x7d;,&amp;quot;enableHelp&amp;quot;&amp;#x3a;false,&amp;quot;sizeBehavior&amp;quot;&amp;#x3a;&amp;quot;Responsive&amp;quot;,&amp;quot;enableWebAssist&amp;quot;&amp;#x3a;false,&amp;quot;searchBusinessObjects&amp;quot;&amp;#x3a;false,&amp;quot;enableFeaturePolicyInIframes&amp;quot;&amp;#x3a;true,&amp;quot;moveAppFinderActionToShellHeader&amp;quot;&amp;#x3a;false,&amp;quot;moveEditHomePageActionToShellHeader&amp;quot;&amp;#x3a;false,&amp;quot;moveUserSettingsActionToShellHeader&amp;quot;&amp;#x3a;false,&amp;quot;favIcon&amp;quot;&amp;#x3a;&amp;quot;https&amp;#x3a;&amp;#x2f;&amp;#x2f;sapui5.hana.ondemand.com&amp;#x2f;1.120.4&amp;#x2f;resources&amp;#x2f;sap&amp;#x2f;ushell&amp;#x2f;themes&amp;#x2f;base&amp;#x2f;img&amp;#x2f;launchpad_favicon.ico&amp;quot;&amp;#x7d;&amp;#x7d;&amp;#x7d;&amp;#x7d;,&amp;quot;ushell&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;contentProviders&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;providerInfo&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;enabled&amp;quot;&amp;#x3a;true&amp;#x7d;&amp;#x7d;,&amp;quot;site&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;siteId&amp;quot;&amp;#x3a;&amp;quot;137c66b4-7048-421f-b0fc-2645bd06c0d0&amp;quot;,&amp;quot;tenantId&amp;quot;&amp;#x3a;&amp;quot;4738c289-6ee6-48b0-9137-3a10dd6fae59&amp;quot;&amp;#x7d;&amp;#x7d;,&amp;quot;services&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;AppState&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;adapter&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;storageType&amp;quot;&amp;#x3a;&amp;quot;REMOTE_STORAGE&amp;quot;,&amp;quot;remoteStorageUrl&amp;quot;&amp;#x3a;&amp;quot;&amp;#x2f;cp.portal&amp;#x2f;portal&amp;#x2f;rest&amp;#x2f;v1&amp;#x2f;appstate&amp;quot;,&amp;quot;requestCSRFTokenURL&amp;quot;&amp;#x3a;&amp;quot;&amp;#x2f;cp.portal&amp;#x2f;requestCSRFToken&amp;quot;,&amp;quot;transient&amp;quot;&amp;#x3a;true&amp;#x7d;,&amp;quot;module&amp;quot;&amp;#x3a;&amp;quot;sap.cf.adapters.AppStateAdapter&amp;quot;&amp;#x7d;&amp;#x7d;,&amp;quot;AssetService&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;module&amp;quot;&amp;#x3a;&amp;quot;sap.ushell.cpv2.services.cloudServices.AssetService&amp;quot;,&amp;quot;adapter&amp;quot;&amp;#x3a;&amp;quot;false&amp;quot;&amp;#x7d;,&amp;quot;BundleService&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;module&amp;quot;&amp;#x3a;&amp;quot;sap.ushell.cpv2.services.cloudServices.BundleService&amp;quot;,&amp;quot;adapter&amp;quot;&amp;#x3a;&amp;quot;false&amp;quot;&amp;#x7d;,&amp;quot;CommonDataModel&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;module&amp;quot;&amp;#x3a;&amp;quot;sap.ushell.services.CommonDataModel&amp;quot;,&amp;quot;adapter&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;module&amp;quot;&amp;#x3a;&amp;quot;sap.cf.adapters.CommonDataModelAdapter&amp;quot;,&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;siteDataUrl&amp;quot;&amp;#x3a;&amp;quot;&amp;#x2f;cp.portal&amp;#x2f;portal&amp;#x2f;rest&amp;#x2f;v1&amp;#x2f;site&amp;#x3f;siteId&amp;#x3d;137c66b4-7048-421f-b0fc-2645bd06c0d0&amp;amp;sap-language&amp;#x3d;en&amp;quot;,&amp;quot;ignoreSiteDataPersonalization&amp;quot;&amp;#x3a;true,&amp;quot;allowSiteSourceFromURLParameter&amp;quot;&amp;#x3a;true,&amp;quot;siteNotFoundUrl&amp;quot;&amp;#x3a;&amp;quot;https&amp;#x3a;&amp;#x2f;&amp;#x2f;portal-service.cfapps.us10.hana.ondemand.com&amp;#x2f;resources&amp;#x2f;portal&amp;#x2f;sap&amp;#x2f;cf&amp;#x2f;pages&amp;#x2f;siteNotFound&amp;#x2f;siteNotFound.html&amp;quot;&amp;#x7d;&amp;#x7d;&amp;#x7d;,&amp;quot;Container&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;adapter&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;systemProperties&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;logoutUrl&amp;quot;&amp;#x3a;&amp;quot;&amp;#x2f;logout&amp;#x3f;siteId&amp;#x3d;137c66b4-7048-421f-b0fc-2645bd06c0d0&amp;amp;sap-language&amp;#x3d;en&amp;quot;,&amp;quot;csrfTokenUrl&amp;quot;&amp;#x3a;&amp;quot;&amp;#x2f;cp.portal&amp;#x2f;requestCSRFToken&amp;quot;,&amp;quot;logoutMethod&amp;quot;&amp;#x3a;&amp;quot;POST&amp;quot;,&amp;quot;sessionKeepAlive&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;url&amp;quot;&amp;#x3a;&amp;quot;&amp;#x2f;cp.portal&amp;#x2f;sessionKeepAlive&amp;quot;,&amp;quot;method&amp;quot;&amp;#x3a;&amp;quot;HEAD&amp;quot;&amp;#x7d;&amp;#x7d;,&amp;quot;userProfilePersonalization&amp;quot;&amp;#x3a;&amp;#x7b;&amp;#x7d;,&amp;quot;userProfile&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;defaults&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;id&amp;quot;&amp;#x3a;&amp;quot;0d552b8c-d07a-4cd6-bbd6-e7eec03d0f9c&amp;quot;,&amp;quot;email&amp;quot;&amp;#x3a;&amp;quot;adam.lenez&amp;#x40;student.ehb.be&amp;quot;,&amp;quot;firstName&amp;quot;&amp;#x3a;&amp;quot;adam&amp;quot;,&amp;quot;lastName&amp;quot;&amp;#x3a;&amp;quot;lenez&amp;quot;,&amp;quot;fullName&amp;quot;&amp;#x3a;&amp;quot;adam&amp;#x20;lenez&amp;quot;,&amp;quot;isAdminUser&amp;quot;&amp;#x3a;false,&amp;quot;isLanguagePersonalized&amp;quot;&amp;#x3a;false,&amp;quot;language&amp;quot;&amp;#x3a;&amp;quot;en&amp;quot;,&amp;quot;languageBcp47&amp;quot;&amp;#x3a;&amp;quot;en&amp;quot;,&amp;quot;themeRoots&amp;quot;&amp;#x3a;&amp;quot;custom_horizon_security&amp;#x40;&amp;#x2f;comsapuitheming.runtime&amp;#x2f;themeroot&amp;#x2f;v1&amp;#x2f;&amp;#x7e;v&amp;#x3d;Base&amp;#x3a;11.10.0,&amp;#x2a;.&amp;#x2a;.custom_horizon_security&amp;#x28;sap_horizon&amp;#x29;&amp;#x3a;20231114T151343Z&amp;quot;,&amp;quot;theme&amp;quot;&amp;#x3a;&amp;quot;custom_horizon_security&amp;quot;&amp;#x7d;,&amp;quot;metadata&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;editablePropterties&amp;quot;&amp;#x3a;&amp;#x5b;&amp;quot;accessibility&amp;quot;,&amp;quot;contentDensity&amp;quot;,&amp;quot;theme&amp;quot;&amp;#x5d;,&amp;quot;ranges&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;theme&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;sap_fiori_3&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;displayName&amp;quot;&amp;#x3a;&amp;quot;SAP&amp;#x20;Quartz&amp;#x20;Light&amp;quot;,&amp;quot;themeRoot&amp;quot;&amp;#x3a;&amp;quot;&amp;quot;&amp;#x7d;,&amp;quot;sap_fiori_3_dark&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;displayName&amp;quot;&amp;#x3a;&amp;quot;SAP&amp;#x20;Quartz&amp;#x20;Dark&amp;quot;,&amp;quot;themeRoot&amp;quot;&amp;#x3a;&amp;quot;&amp;quot;&amp;#x7d;,&amp;quot;sap_belize_hcb&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;displayName&amp;quot;&amp;#x3a;&amp;quot;SAP&amp;#x20;High&amp;#x20;Contrast&amp;#x20;Black&amp;quot;,&amp;quot;themeRoot&amp;quot;&amp;#x3a;&amp;quot;&amp;quot;&amp;#x7d;,&amp;quot;sap_belize_hcw&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;displayName&amp;quot;&amp;#x3a;&amp;quot;SAP&amp;#x20;High&amp;#x20;Contrast&amp;#x20;White&amp;quot;,&amp;quot;themeRoot&amp;quot;&amp;#x3a;&amp;quot;&amp;quot;&amp;#x7d;,&amp;quot;sap_horizon&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;displayName&amp;quot;&amp;#x3a;&amp;quot;SAP&amp;#x20;Morning&amp;#x20;Horizon&amp;quot;,&amp;quot;themeRoot&amp;quot;&amp;#x3a;&amp;quot;&amp;quot;&amp;#x7d;,&amp;quot;sap_horizon_dark&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;displayName&amp;quot;&amp;#x3a;&amp;quot;SAP&amp;#x20;Evening&amp;#x20;Horizon&amp;quot;,&amp;quot;themeRoot&amp;quot;&amp;#x3a;&amp;quot;&amp;quot;&amp;#x7d;,&amp;quot;sap_horizon_hcb&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;displayName&amp;quot;&amp;#x3a;&amp;quot;SAP&amp;#x20;High&amp;#x20;Contrast&amp;#x20;Black&amp;#x20;&amp;#x28;SAP&amp;#x20;Horizon&amp;#x29;&amp;quot;,&amp;quot;themeRoot&amp;quot;&amp;#x3a;&amp;quot;&amp;quot;&amp;#x7d;,&amp;quot;sap_horizon_hcw&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;displayName&amp;quot;&amp;#x3a;&amp;quot;SAP&amp;#x20;High&amp;#x20;Contrast&amp;#x20;White&amp;#x20;&amp;#x28;SAP&amp;#x20;Horizon&amp;#x29;&amp;quot;,&amp;quot;themeRoot&amp;quot;&amp;#x3a;&amp;quot;&amp;quot;&amp;#x7d;,&amp;quot;custom_horizon_security&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;themeRoot&amp;quot;&amp;#x3a;&amp;quot;&amp;#x2f;comsapuitheming.runtime&amp;#x2f;themeroot&amp;#x2f;v1&amp;#x2f;&amp;#x7e;v&amp;#x3d;Base&amp;#x3a;11.10.0,&amp;#x2a;.&amp;#x2a;.custom_horizon_security&amp;#x28;sap_horizon&amp;#x29;&amp;#x3a;20231114T151343Z&amp;quot;,&amp;quot;displayName&amp;quot;&amp;#x3a;&amp;quot;&amp;quot;&amp;#x7d;&amp;#x7d;&amp;#x7d;&amp;#x7d;&amp;#x7d;&amp;#x7d;&amp;#x7d;&amp;#x7d;,&amp;quot;EndUserFeedback&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;adapter&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;enabled&amp;quot;&amp;#x3a;false&amp;#x7d;&amp;#x7d;&amp;#x7d;,&amp;quot;LaunchPage&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;adapter&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;module&amp;quot;&amp;#x3a;&amp;quot;sap.ushell.adapters.cdm.v3.LaunchPageAdapter&amp;quot;&amp;#x7d;&amp;#x7d;,&amp;quot;NavTargetResolution&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;adapter&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;module&amp;quot;&amp;#x3a;&amp;quot;sap.cf.adapters.NavTargetResolutionAdapter&amp;quot;,&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;#x7d;&amp;#x7d;&amp;#x7d;,&amp;quot;Personalization&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;adapter&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;module&amp;quot;&amp;#x3a;&amp;quot;sap.cf.adapters.PersonalizationAdapter&amp;quot;,&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;storageType&amp;quot;&amp;#x3a;&amp;quot;REMOTE_STORAGE&amp;quot;,&amp;quot;remoteStorageUrl&amp;quot;&amp;#x3a;&amp;quot;&amp;#x2f;cp.portal&amp;#x2f;portal&amp;#x2f;rest&amp;#x2f;v1&amp;#x2f;personalization&amp;#x3f;siteId&amp;#x3d;137c66b4-7048-421f-b0fc-2645bd06c0d0&amp;amp;cacheBusterToken&amp;#x3d;1704813784536&amp;quot;,&amp;quot;requestCSRFTokenURL&amp;quot;&amp;#x3a;&amp;quot;&amp;#x2f;cp.portal&amp;#x2f;requestCSRFToken&amp;quot;&amp;#x7d;&amp;#x7d;&amp;#x7d;,&amp;quot;PluginManager&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;loadPluginsFromSite&amp;quot;&amp;#x3a;true&amp;#x7d;&amp;#x7d;,&amp;quot;Search&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;adapter&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;module&amp;quot;&amp;#x3a;&amp;quot;sap.ushell.adapters.local.SearchAdapter&amp;quot;&amp;#x7d;&amp;#x7d;,&amp;quot;SiteService&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;module&amp;quot;&amp;#x3a;&amp;quot;sap.ushell.cpv2.services.cloudServices.SiteService&amp;quot;,&amp;quot;adapter&amp;quot;&amp;#x3a;&amp;quot;false&amp;quot;&amp;#x7d;,&amp;quot;SupportTicket&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;adapter&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;enabled&amp;quot;&amp;#x3a;false&amp;#x7d;&amp;#x7d;&amp;#x7d;,&amp;quot;Ui5ComponentLoader&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;adapter&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;module&amp;quot;&amp;#x3a;&amp;quot;sap.cf.adapters.Ui5ComponentLoaderAdapter&amp;quot;,&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;#x7d;&amp;#x7d;&amp;#x7d;,&amp;quot;UITracer&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;enabled&amp;quot;&amp;#x3a;true,&amp;quot;serviceUrl&amp;quot;&amp;#x3a;&amp;quot;&amp;#x2f;bff&amp;#x2f;ui-trace&amp;#x2f;v1&amp;#x2f;trace&amp;quot;&amp;#x7d;&amp;#x7d;,&amp;quot;URLHelper&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;module&amp;quot;&amp;#x3a;&amp;quot;sap.ushell.cpv2.services.cloudServices.URLHelper&amp;quot;,&amp;quot;adapter&amp;quot;&amp;#x3a;&amp;quot;false&amp;quot;&amp;#x7d;,&amp;quot;URLTemplate&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;adapter&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;module&amp;quot;&amp;#x3a;&amp;quot;sap.cf.adapters.URLTemplateAdapter&amp;quot;,&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;isIASFlow&amp;quot;&amp;#x3a;false,&amp;quot;requestAuthCodeURL&amp;quot;&amp;#x3a;&amp;quot;&amp;#x2f;cp.portal&amp;#x2f;bff_service&amp;#x2f;token&amp;quot;,&amp;quot;SESSION_SINGLE_USE_TOKEN_ENABLED&amp;quot;&amp;#x3a;false&amp;#x7d;&amp;#x7d;&amp;#x7d;,&amp;quot;UserInfo&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;adapter&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;availableLocales&amp;quot;&amp;#x3a;&amp;#x5b;&amp;quot;en&amp;quot;,&amp;quot;&amp;quot;&amp;#x5d;,&amp;quot;availableThemes&amp;quot;&amp;#x3a;&amp;#x5b;&amp;quot;sap_fiori_3&amp;quot;,&amp;quot;sap_fiori_3_dark&amp;quot;,&amp;quot;sap_belize_hcb&amp;quot;,&amp;quot;sap_belize_hcw&amp;quot;,&amp;quot;sap_horizon&amp;quot;,&amp;quot;sap_horizon_dark&amp;quot;,&amp;quot;sap_horizon_hcb&amp;quot;,&amp;quot;sap_horizon_hcw&amp;quot;,&amp;quot;custom_horizon_security&amp;quot;&amp;#x5d;&amp;#x7d;,&amp;quot;module&amp;quot;&amp;#x3a;&amp;quot;sap.cf.adapters.UserInfoAdapter&amp;quot;&amp;#x7d;&amp;#x7d;,&amp;quot;UserDefaultParameterPersistence&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;adapter&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;module&amp;quot;&amp;#x3a;&amp;quot;sap.ushell.adapters.cflp.UserDefaultParameterPersistenceAdapter&amp;quot;&amp;#x7d;&amp;#x7d;,&amp;quot;AllMyApps&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;enabled&amp;quot;&amp;#x3a;true&amp;#x7d;&amp;#x7d;&amp;#x7d;,&amp;quot;modulePaths&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;sap.cf&amp;quot;&amp;#x3a;&amp;quot;https&amp;#x3a;&amp;#x2f;&amp;#x2f;portal-service.cfapps.us10.hana.ondemand.com&amp;#x2f;resources&amp;#x2f;portal&amp;#x2f;&amp;#x7e;e8ce9d66cc4df4561f1c0c72444c95bc0ba47951&amp;#x7e;&amp;#x2f;sap&amp;#x2f;cf&amp;quot;,&amp;quot;sap.ushell.cpv2.services&amp;quot;&amp;#x3a;&amp;quot;https&amp;#x3a;&amp;#x2f;&amp;#x2f;portal-service.cfapps.us10.hana.ondemand.com&amp;#x2f;resources&amp;#x2f;freestyle&amp;#x2f;&amp;#x7e;e8ce9d66cc4df4561f1c0c72444c95bc0ba47951&amp;#x7e;&amp;#x2f;sap&amp;#x2f;ushell&amp;#x2f;cpv2&amp;#x2f;services&amp;quot;,&amp;quot;sap.ushell.apps&amp;quot;&amp;#x3a;&amp;quot;https&amp;#x3a;&amp;#x2f;&amp;#x2f;portal-service.cfapps.us10.hana.ondemand.com&amp;#x2f;resources&amp;#x2f;freestyle&amp;#x2f;&amp;#x7e;e8ce9d66cc4df4561f1c0c72444c95bc0ba47951&amp;#x7e;&amp;#x2f;sap&amp;#x2f;ushell&amp;#x2f;apps&amp;quot;,&amp;quot;sap.bwpPlugins&amp;quot;&amp;#x3a;&amp;quot;&amp;#x2f;portaldest&amp;#x2f;sap&amp;#x2f;bwpPlugins&amp;quot;,&amp;quot;sap.workzone.utils&amp;quot;&amp;#x3a;&amp;quot;&amp;#x2f;workzone&amp;#x2f;&amp;#x7e;e8ce9d66cc4df4561f1c0c72444c95bc0ba47951&amp;#x7e;&amp;#x2f;sap&amp;#x2f;workzone&amp;#x2f;utils&amp;quot;,&amp;quot;fin.central.user.defaultparameter&amp;quot;&amp;#x3a;&amp;quot;&amp;#x2f;fincentraluserdefaultparameter&amp;#x2f;&amp;#x7e;e8ce9d66cc4df4561f1c0c72444c95bc0ba47951&amp;#x7e;&amp;#x2f;&amp;quot;,&amp;quot;sap.cf.plugins.ThemeDesign&amp;quot;&amp;#x3a;&amp;quot;https&amp;#x3a;&amp;#x2f;&amp;#x2f;portal-service.cfapps.us10.hana.ondemand.com&amp;#x2f;resources&amp;#x2f;portal&amp;#x2f;&amp;#x7e;e8ce9d66cc4df4561f1c0c72444c95bc0ba47951&amp;#x7e;&amp;#x2f;sap&amp;#x2f;cf&amp;#x2f;plugins&amp;#x2f;ThemeDesign&amp;quot;,&amp;quot;sap.cf.plugins.EPSessionTermination&amp;quot;&amp;#x3a;&amp;quot;https&amp;#x3a;&amp;#x2f;&amp;#x2f;portal-service.cfapps.us10.hana.ondemand.com&amp;#x2f;resources&amp;#x2f;portal&amp;#x2f;&amp;#x7e;e8ce9d66cc4df4561f1c0c72444c95bc0ba47951&amp;#x7e;&amp;#x2f;sap&amp;#x2f;cf&amp;#x2f;plugins&amp;#x2f;EPSessionTermination&amp;quot;,&amp;quot;sap.cf.plugins.MobileStartQrCode&amp;quot;&amp;#x3a;&amp;quot;https&amp;#x3a;&amp;#x2f;&amp;#x2f;portal-service.cfapps.us10.hana.ondemand.com&amp;#x2f;resources&amp;#x2f;portal&amp;#x2f;&amp;#x7e;e8ce9d66cc4df4561f1c0c72444c95bc0ba47951&amp;#x7e;&amp;#x2f;sap&amp;#x2f;cf&amp;#x2f;plugins&amp;#x2f;MobileStartQrCode&amp;quot;,&amp;quot;sap.cf.plugins.ManageSite&amp;quot;&amp;#x3a;&amp;quot;https&amp;#x3a;&amp;#x2f;&amp;#x2f;portal-service.cfapps.us10.hana.ondemand.com&amp;#x2f;resources&amp;#x2f;portal&amp;#x2f;&amp;#x7e;e8ce9d66cc4df4561f1c0c72444c95bc0ba47951&amp;#x7e;&amp;#x2f;sap&amp;#x2f;cf&amp;#x2f;plugins&amp;#x2f;ManageSite&amp;quot;&amp;#x7d;,&amp;quot;ui5&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;libs&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;sap.ui.core&amp;quot;&amp;#x3a;true,&amp;quot;sap.m&amp;quot;&amp;#x3a;true,&amp;quot;sap.ushell&amp;quot;&amp;#x3a;true,&amp;quot;sap.cf.adapters&amp;quot;&amp;#x3a;true,&amp;quot;sap.ushell.cpv2.services&amp;quot;&amp;#x3a;true&amp;#x7d;&amp;#x7d;,&amp;quot;bootstrapPlugins&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;rtaShell&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;component&amp;quot;&amp;#x3a;&amp;quot;sap.ushell.appRuntime.ui5.plugins.rtaShell&amp;quot;,&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;sap-plugin-agent&amp;quot;&amp;#x3a;true,&amp;quot;sap-plugin-agent-id&amp;quot;&amp;#x3a;&amp;quot;RTAPluginAgent&amp;quot;&amp;#x7d;&amp;#x7d;,&amp;quot;userDefaults&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;component&amp;quot;&amp;#x3a;&amp;quot;fin.central.user.defaultparameter&amp;quot;&amp;#x7d;,&amp;quot;digitalAssistantPlugin&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;component&amp;quot;&amp;#x3a;&amp;quot;sap.das.webclientplugin.workzone.Component&amp;quot;,&amp;quot;url&amp;quot;&amp;#x3a;&amp;quot;https&amp;#x3a;&amp;#x2f;&amp;#x2f;sapdas.us10.sapdas.cloud.sap&amp;#x2f;resources&amp;#x2f;public&amp;#x2f;webclient&amp;#x2f;workzone&amp;#x2f;&amp;quot;,&amp;quot;config&amp;quot;&amp;#x3a;&amp;#x7b;&amp;#x7d;&amp;#x7d;,&amp;quot;epSessionTermination&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;component&amp;quot;&amp;#x3a;&amp;quot;sap.cf.plugins.EPSessionTermination&amp;quot;&amp;#x7d;,&amp;quot;MobileStartQrCode&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;component&amp;quot;&amp;#x3a;&amp;quot;sap.cf.plugins.MobileStartQrCode&amp;quot;,&amp;quot;url&amp;quot;&amp;#x3a;&amp;quot;https&amp;#x3a;&amp;#x2f;&amp;#x2f;portal-service.cfapps.us10.hana.ondemand.com&amp;#x2f;resources&amp;#x2f;portal&amp;#x2f;&amp;#x7e;e8ce9d66cc4df4561f1c0c72444c95bc0ba47951&amp;#x7e;&amp;#x2f;sap&amp;#x2f;cf&amp;#x2f;plugins&amp;#x2f;MobileStartQrCode&amp;quot;&amp;#x7d;&amp;#x7d;,&amp;quot;bootstrap&amp;quot;&amp;#x3a;&amp;#x7b;&amp;quot;extensionModule&amp;quot;&amp;#x3a;&amp;quot;sap.cf.modules.bootstrapExtension&amp;quot;&amp;#x7d;&amp;#x7d;&#39;/&gt;
+    &lt;meta name=&quot;sap.ushellConfig.additionalUshellConfig&quot; content=&#39;&amp;#x7b;&amp;#x7d;&#39;/&gt;
+    &lt;title&gt;Security App&lt;/title&gt;
+    &lt;script id=&quot;sap-ui-bootstrap&quot; src=&quot;https&amp;#x3a;&amp;#x2f;&amp;#x2f;sapui5.hana.ondemand.com&amp;#x2f;1.120.4/resources/sap/ushell/bootstrap/cdm.js&quot;
+            data-sap-ui-theme-roots={&quot;custom_horizon_security&quot;:&quot;/comsapuitheming.runtime/themeroot/v1/~v=Base:11.10.0,*.*.custom_horizon_security(sap_horizon):20231114T151343Z/UI5&quot;}
+            data-sap-ui-versionedLibCss=true
+            data-sap-ui-async=&quot;true&quot;
+            data-sap-ui-flexibilityServices=&quot;&amp;#x5b;&amp;#x7b;&amp;quot;url&amp;quot;&amp;#x3a;&amp;quot;&amp;#x2f;comsapperso&amp;quot;,&amp;quot;connector&amp;quot;&amp;#x3a;&amp;quot;PersonalizationConnector&amp;quot;&amp;#x7d;&amp;#x5d;&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body class=&quot;sapUiBody&quot;&gt;
+
+&lt;div id=&quot;canvas&quot; &gt;
+    &lt;div class=&quot;sapMShellBG sapUiGlobalBackgroundImage&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>https://sapui5.hana.ondemand.com/1.120.4/resources/sap/ushell/bootstrap/cdm.js</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;script id=&quot;sap-ui-bootstrap&quot; src=&quot;https&amp;#x3a;&amp;#x2f;&amp;#x2f;sapui5.hana.ondemand.com&amp;#x2f;1.120.4/resources/sap/ushell/bootstrap/cdm.js&quot;
+            data-sap-ui-theme-roots={&quot;custom_horizon_security&quot;:&quot;/comsapuitheming.runtime/themeroot/v1/~v=Base:11.10.0,*.*.custom_horizon_security(sap_horizon):20231114T151343Z/UI5&quot;}
+            data-sap-ui-versionedLibCss=true
+            data-sap-ui-async=&quot;true&quot;
+            data-sap-ui-flexibilityServices=&quot;&amp;#x5b;&amp;#x7b;&amp;quot;url&amp;quot;&amp;#x3a;&amp;quot;&amp;#x2f;comsapperso&amp;quot;,&amp;quot;connector&amp;quot;&amp;#x3a;&amp;quot;PersonalizationConnector&amp;quot;&amp;#x7d;&amp;#x5d;&quot;&gt;&lt;/script&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can&#39;t be controlled by end users of the application.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						
+						
+						
+						
+					</ol>
+				</li>
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(3)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://a8462f3ftrial.authentication.us10.hana.ondemand.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-17">Session Management Response Identified</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://a8462f3ftrial.authentication.us10.hana.ondemand.com/oauth/authorize?response_type=code&amp;client_id=sb-launchpad-dt-approuter!t1483&amp;redirect_uri=https%3A%2F%2Fa8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com%2Flogin%2Fcallback%3FauthType%3Dxsuaa&amp;state=e04b3194-d52b-4ed6-8468-91efbae1f3dd</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The given response has been identified as containing a session management token. The &#39;Other Info&#39; field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to &quot;Auto-Detect&quot; then this rule will change the session management to use the tokens identified.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>cookie:X-Uaa-Csrf</p>
+
+<p>cookie:__VCAP_ID__</p>
+
+<p>cookie:JSESSIONID</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (792 bytes)</summary>
+				
+				<pre><code>GET https://a8462f3ftrial.authentication.us10.hana.ondemand.com/oauth/authorize?response_type=code&amp;client_id=sb-launchpad-dt-approuter!t1483&amp;redirect_uri=https%3A%2F%2Fa8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com%2Flogin%2Fcallback%3FauthType%3Dxsuaa&amp;state=e04b3194-d52b-4ed6-8468-91efbae1f3dd HTTP/1.1
+host: a8462f3ftrial.authentication.us10.hana.ondemand.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Referer: https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com/
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-site
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (803 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+content-length: 0
+date: Thu, 11 Jan 2024 14:43:15 GMT
+expires: 0
+location: https://a8462f3ftrial.authentication.us10.hana.ondemand.com/login
+pragma: no-cache
+set-cookie: X-Uaa-Csrf=XrCrBv4sVJJGjUVhtQrls4; Max-Age=86400; Expires=Fri, 12 Jan 2024 14:43:16 GMT; Path=/; Secure; HttpOnly; SameSite=None
+set-cookie: JSESSIONID=1B8770F233AC9A24D2EDC765B24322A6; Path=/; Secure; HttpOnly; SameSite=None
+set-cookie: __VCAP_ID__=b5accf49-dee2-4b57-5839-c1c1; Path=/; HttpOnly; Secure; SameSite=None
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-vcap-request-id: 4e641fb2-3232-4f79-4c1f-52dd49dfdc05
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubDomains; preload;
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Uaa-Csrf</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>XrCrBv4sVJJGjUVhtQrls4</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-15">Modern Web Application</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com/site?siteId=137c66b4-7048-421f-b0fc-2645bd06c0d0</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (548 bytes)</summary>
+				
+				<pre><code>GET https://a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com/site?siteId=137c66b4-7048-421f-b0fc-2645bd06c0d0 HTTP/1.1
+host: a8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (449 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+cache-control: no-cache, no-store, must-revalidate
+content-security-policy: script-src &#39;self&#39; &#39;unsafe-inline&#39;; frame-ancestors *
+content-type: text/html
+date: Thu, 11 Jan 2024 14:43:15 GMT
+x-content-type-options: nosniff
+x-request-id: c05122ce-66a0-4484-6c36-c49f8b3e584d
+x-vcap-request-id: c05122ce-66a0-4484-6c36-c49f8b3e584d
+strict-transport-security: max-age=31536000; includeSubDomains; preload;
+content-length: 802
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (802 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;&lt;head&gt;&lt;link rel=&quot;shortcut icon&quot; href=&quot;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&quot; /&gt;&lt;script&gt;document.cookie=&quot;fragmentAfterLogin=&quot;+encodeURIComponent(location.hash)+&quot;;path=/;Secure;SameSite=None;&quot;;document.cookie=&quot;locationAfterLogin=&quot;+encodeURIComponent(location.href.split(&#39;#&#39;)[0].split(location.host)[1])+&quot;;path=/;Secure;SameSite=None;&quot;;document.cookie=&quot;signature=94F0B%2Fn81XLdixtZK0LAj0xSa5k%3D;path=/;Secure;SameSite=None;&quot;;location=&quot;https://a8462f3ftrial.authentication.us10.hana.ondemand.com/oauth/authorize?response_type=code&amp;client_id=sb-launchpad-dt-approuter!t1483&amp;redirect_uri=https%3A%2F%2Fa8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com%2Flogin%2Fcallback%3FauthType%3Dxsuaa&amp;state=e04b3194-d52b-4ed6-8468-91efbae1f3dd&quot;&lt;/script&gt;&lt;/head&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;script&gt;document.cookie=&quot;fragmentAfterLogin=&quot;+encodeURIComponent(location.hash)+&quot;;path=/;Secure;SameSite=None;&quot;;document.cookie=&quot;locationAfterLogin=&quot;+encodeURIComponent(location.href.split(&#39;#&#39;)[0].split(location.host)[1])+&quot;;path=/;Secure;SameSite=None;&quot;;document.cookie=&quot;signature=94F0B%2Fn81XLdixtZK0LAj0xSa5k%3D;path=/;Secure;SameSite=None;&quot;;location=&quot;https://a8462f3ftrial.authentication.us10.hana.ondemand.com/oauth/authorize?response_type=code&amp;client_id=sb-launchpad-dt-approuter!t1483&amp;redirect_uri=https%3A%2F%2Fa8462f3ftrial.launchpad.cfapps.us10.hana.ondemand.com%2Flogin%2Fcallback%3FauthType%3Dxsuaa&amp;state=e04b3194-d52b-4ed6-8468-91efbae1f3dd&quot;&lt;/script&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert and so no changes are required.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(4)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						
+						
+						
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Open Redirect</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10028/">Open Redirect</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/601.html">601</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>38</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://cwe.mitre.org/data/definitions/601.html">https://cwe.mitre.org/data/definitions/601.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>CSP: Wildcard Directive</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10055/">CSP</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://www.w3.org/TR/CSP2/">http://www.w3.org/TR/CSP2/</a></li>
+										<li><a
+											href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="http://caniuse.com/#search=content+security+policy">http://caniuse.com/#search=content+security+policy</a></li>
+										<li><a
+											href="http://content-security-policy.com/">http://content-security-policy.com/</a></li>
+										<li><a
+											href="https://github.com/shapesecurity/salvation">https://github.com/shapesecurity/salvation</a></li>
+										<li><a
+											href="https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources">https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>CSP: script-src unsafe-inline</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10055/">CSP</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://www.w3.org/TR/CSP2/">http://www.w3.org/TR/CSP2/</a></li>
+										<li><a
+											href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="http://caniuse.com/#search=content+security+policy">http://caniuse.com/#search=content+security+policy</a></li>
+										<li><a
+											href="http://content-security-policy.com/">http://content-security-policy.com/</a></li>
+										<li><a
+											href="https://github.com/shapesecurity/salvation">https://github.com/shapesecurity/salvation</a></li>
+										<li><a
+											href="https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources">https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>CSP: style-src unsafe-inline</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10055/">CSP</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://www.w3.org/TR/CSP2/">http://www.w3.org/TR/CSP2/</a></li>
+										<li><a
+											href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="http://caniuse.com/#search=content+security+policy">http://caniuse.com/#search=content+security+policy</a></li>
+										<li><a
+											href="http://content-security-policy.com/">http://content-security-policy.com/</a></li>
+										<li><a
+											href="https://github.com/shapesecurity/salvation">https://github.com/shapesecurity/salvation</a></li>
+										<li><a
+											href="https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources">https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html">http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</a></li>
+										<li><a
+											href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">http://www.html5rocks.com/en/tutorials/security/content-security-policy/</a></li>
+										<li><a
+											href="http://caniuse.com/#feat=contentsecuritypolicy">http://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="http://content-security-policy.com/">http://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Cross-Domain Misconfiguration</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10098/">Cross-Domain Misconfiguration</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/264.html">264</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>14</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy">https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>Cookie No HttpOnly Flag</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10010/">Cookie No HttpOnly Flag</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1004.html">1004</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-community/HttpOnly">https://owasp.org/www-community/HttpOnly</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>Cookie with SameSite Attribute None</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10054/">Cookie without SameSite Attribute</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1275.html">1275</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site">https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>Cross-Domain JavaScript Source File Inclusion</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10017/">Cross-Domain JavaScript Source File Inclusion</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/829.html">829</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-10">
+						<h4>Timestamp Disclosure - Unix</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10096/">Timestamp Disclosure</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://projects.webappsec.org/w/page/13246936/Information%20Leakage">http://projects.webappsec.org/w/page/13246936/Information%20Leakage</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-11">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-12">
+						<h4>Authentication Request Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10111/">Authentication Request Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-13">
+						<h4>Information Disclosure - Sensitive Information in URL</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10024/">Information Disclosure - Sensitive Information in URL</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-14">
+						<h4>Information Disclosure - Suspicious Comments</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10027/">Information Disclosure - Suspicious Comments</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-15">
+						<h4>Modern Web Application</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10109/">Modern Web Application</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-16">
+						<h4>Re-examine Cache-control Directives</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10015/">Re-examine Cache-control Directives</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/525.html">525</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching">https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</a></li>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</a></li>
+										<li><a
+											href="https://grayduck.mn/2021/09/13/cache-control-recommendations/">https://grayduck.mn/2021/09/13/cache-control-recommendations/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-17">
+						<h4>Session Management Response Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10112/">Session Management Response Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-18">
+						<h4>User Controllable HTML Element Attribute (Potential XSS)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10031/">User Controllable HTML Element Attribute (Potential XSS)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/20.html">20</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>20</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute">http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
